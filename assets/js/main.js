@@ -151,7 +151,7 @@ function scrollActive() {
     })
 }
 
-window.addEventListener('click', scrollActive);
+window.addEventListener('scroll', scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
@@ -185,8 +185,8 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mo
 
 // We validate if the user previosly chose a topic
 if(selectedTheme){
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove' ](darkTheme);
-    themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove' ](iconTheme);
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
 }
 
 // Activate / Deactivate the theme  manually  with the button
